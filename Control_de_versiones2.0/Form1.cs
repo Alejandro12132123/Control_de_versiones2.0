@@ -24,7 +24,8 @@ namespace Control_de_versiones2._0
             string Nombre = textNombre.Text;
             string Apellido = textApellido.Text;
             string Curso = comboBox1.Text;
-            double Meses = (int)numericUpDown1.Value;
+            int Meses = (int)numericUpDown1.Value;
+            //modifique el numericUpDown para que se pudiera limpiar
 
             //Calcular los meses y el descuento 
 
@@ -71,6 +72,14 @@ namespace Control_de_versiones2._0
         private void button2_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            textNombre.Clear();
+            textApellido.Clear();
+            comboBox1.SelectedIndex = -1;
+            numericUpDown1.Value = 0;
         }
     }
 }

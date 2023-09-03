@@ -39,13 +39,14 @@ namespace Control_de_versiones2._0
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.button2 = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(164, 71);
+            this.label1.Location = new System.Drawing.Point(40, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 13);
             this.label1.TabIndex = 0;
@@ -54,7 +55,7 @@ namespace Control_de_versiones2._0
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(167, 102);
+            this.label2.Location = new System.Drawing.Point(40, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 13);
             this.label2.TabIndex = 1;
@@ -63,7 +64,7 @@ namespace Control_de_versiones2._0
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(170, 140);
+            this.label3.Location = new System.Drawing.Point(40, 121);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(166, 13);
             this.label3.TabIndex = 2;
@@ -72,7 +73,7 @@ namespace Control_de_versiones2._0
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(170, 186);
+            this.label4.Location = new System.Drawing.Point(40, 164);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 13);
             this.label4.TabIndex = 3;
@@ -80,21 +81,21 @@ namespace Control_de_versiones2._0
             // 
             // textNombre
             // 
-            this.textNombre.Location = new System.Drawing.Point(342, 64);
+            this.textNombre.Location = new System.Drawing.Point(242, 38);
             this.textNombre.Name = "textNombre";
             this.textNombre.Size = new System.Drawing.Size(100, 20);
             this.textNombre.TabIndex = 4;
             // 
             // textApellido
             // 
-            this.textApellido.Location = new System.Drawing.Point(342, 102);
+            this.textApellido.Location = new System.Drawing.Point(242, 77);
             this.textApellido.Name = "textApellido";
             this.textApellido.Size = new System.Drawing.Size(100, 20);
             this.textApellido.TabIndex = 5;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(342, 254);
+            this.button1.Location = new System.Drawing.Point(43, 234);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 8;
@@ -108,14 +109,14 @@ namespace Control_de_versiones2._0
             this.comboBox1.Items.AddRange(new object[] {
             "APRENDER AUTOMOTORES LIVIANOS ",
             "APRENDER MOTOCICLETAS"});
-            this.comboBox1.Location = new System.Drawing.Point(342, 143);
+            this.comboBox1.Location = new System.Drawing.Point(242, 113);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(217, 21);
             this.comboBox1.TabIndex = 10;
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(342, 186);
+            this.numericUpDown1.Location = new System.Drawing.Point(242, 157);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             12,
             0,
@@ -127,7 +128,7 @@ namespace Control_de_versiones2._0
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(435, 254);
+            this.button2.Location = new System.Drawing.Point(287, 234);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 12;
@@ -135,11 +136,22 @@ namespace Control_de_versiones2._0
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Location = new System.Drawing.Point(160, 234);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpiar.TabIndex = 13;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(491, 278);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.comboBox1);
@@ -170,6 +182,7 @@ namespace Control_de_versiones2._0
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }
 
