@@ -46,6 +46,7 @@ namespace Control_de_versiones2._0
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(40, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 13);
@@ -88,6 +89,7 @@ namespace Control_de_versiones2._0
             // 
             // textApellido
             // 
+            this.textApellido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textApellido.Location = new System.Drawing.Point(242, 77);
             this.textApellido.Name = "textApellido";
             this.textApellido.Size = new System.Drawing.Size(100, 20);
@@ -95,6 +97,7 @@ namespace Control_de_versiones2._0
             // 
             // button1
             // 
+            this.button1.ForeColor = System.Drawing.Color.Green;
             this.button1.Location = new System.Drawing.Point(43, 234);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
@@ -116,6 +119,7 @@ namespace Control_de_versiones2._0
             // 
             // numericUpDown1
             // 
+            this.numericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.numericUpDown1.Location = new System.Drawing.Point(242, 157);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             12,
@@ -128,6 +132,7 @@ namespace Control_de_versiones2._0
             // 
             // button2
             // 
+            this.button2.ForeColor = System.Drawing.Color.Green;
             this.button2.Location = new System.Drawing.Point(287, 234);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
@@ -138,6 +143,7 @@ namespace Control_de_versiones2._0
             // 
             // btnLimpiar
             // 
+            this.btnLimpiar.ForeColor = System.Drawing.Color.Green;
             this.btnLimpiar.Location = new System.Drawing.Point(160, 234);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
@@ -150,6 +156,7 @@ namespace Control_de_versiones2._0
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Green;
             this.ClientSize = new System.Drawing.Size(491, 278);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.button2);
@@ -162,8 +169,9 @@ namespace Control_de_versiones2._0
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

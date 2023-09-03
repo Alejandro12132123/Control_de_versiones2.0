@@ -81,5 +81,10 @@ namespace Control_de_versiones2._0
             comboBox1.SelectedIndex = -1;
             numericUpDown1.Value = 0;
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
