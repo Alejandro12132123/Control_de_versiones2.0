@@ -68,7 +68,7 @@ namespace Control_de_versiones2._0
 
         }
 
-        private void btnsalir_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             Close();
         }
